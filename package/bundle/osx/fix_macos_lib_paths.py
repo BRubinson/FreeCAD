@@ -70,13 +70,14 @@ def scan_directory(directory, recursive=False):
         except:
             continue
 
-        file_dir = os.path.dirname(full_path)
         rpaths_processed = set()
         for rpath in rpaths:
             if rpath == "@loader_path":
                 rpath = "@loader_path/"
 
-            if os.path.isabs(rpath) and os.path.samefile(file_dir, rpath):
+            # Any absolute rpath in a relocatable .app resolves to the build
+            # env (a second copy of every lib) on the build machine, or nowhere.
+            if os.path.isabs(rpath):
                 if scanmode:
                     print(f'\nFound absolute path in LC_RPATH: {rpath}\nIn: {full_path}')
                 else:
