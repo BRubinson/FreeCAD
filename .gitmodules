@@ -1,17 +1,17 @@
 [submodule "src/3rdParty/OndselSolver"]
 	path = src/3rdParty/OndselSolver
-	url = https://github.com/FreeCAD/OndselSolver.git
+	url = https://github.com/BRubinson/OndselSolver.git
 [submodule "src/3rdParty/GSL"]
 	path = src/3rdParty/GSL
-	url = https://github.com/microsoft/GSL
+	url = https://github.com/BRubinson/GSL.git
 [submodule "src/Mod/AddonManager"]
 	path = src/Mod/AddonManager
-	url = https://github.com/FreeCAD/AddonManager.git
+	url = https://github.com/BRubinson/AddonManager.git
 [submodule "src/3rdParty/coin"]
 	path = src/3rdParty/coin
-	url = https://github.com/FreeCAD/coin.git
+	url = https://github.com/BRubinson/coin.git
 	branch = freecad-master
 [submodule "src/3rdParty/pivy"]
 	path = src/3rdParty/pivy
-	url = https://github.com/FreeCAD/pivy.git
+	url = https://github.com/BRubinson/pivy.git
 	branch = freecad-master
